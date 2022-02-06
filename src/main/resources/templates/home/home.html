@@ -2,10 +2,13 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Counter</title>
+    <title>Title</title>
 </head>
 <body>
-<h1 th:width="">Counter Project</h1>
+<h1>This is home</h1>
+<button>+</button>
+<div th:object="${counter}"><p th:text="${counter.counter}"></p></div>
+<button>-</button>
 
 </body>
 </html>
