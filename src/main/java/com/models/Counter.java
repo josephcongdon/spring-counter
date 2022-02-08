@@ -19,8 +19,8 @@ public class Counter {
         this.counter = counter;
     }
 
-    public Counter(long counter) {
-        this.counter = counter;
+    public Counter(int id) {
+        this.id = id;
     }
 
     public Counter() {
