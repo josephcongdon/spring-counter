@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @EnableJpaRepositories
-@ComponentScan(basePackages = {"java"})
+@ComponentScan(basePackages = {"java" , "com.services"})
 public class SpringCounterApplication {
 
     public static void main(String[] args) {
