@@ -18,7 +18,7 @@ public class CounterController {
     }
 
 
-    @GetMapping("")
+    @GetMapping("/")
     public String home(Model viewModel) {
         Counter counter = counterDao.getById(1L);
         viewModel.addAttribute("counter",counter);
