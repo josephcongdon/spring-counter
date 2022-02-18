@@ -17,10 +17,10 @@ public class CounterController {
         this.counterDao = counterDao;
     }
 
-
     @GetMapping("/")
     public String home(Model viewModel) {
         Counter counter = counterDao.getById(1L);
+        System.out.println("counter.getCounter() = " + counter.getCounter());
         viewModel.addAttribute("counter",counter);
         return "home/home";
 

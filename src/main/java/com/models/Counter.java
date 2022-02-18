@@ -8,7 +8,7 @@ public class Counter {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
     @Column(nullable = false)
     private long counter;
@@ -25,7 +25,7 @@ public class Counter {
     public Counter() {
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 

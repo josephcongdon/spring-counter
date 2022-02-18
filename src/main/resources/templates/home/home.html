@@ -6,9 +6,12 @@
 </head>
 <body>
 <h1>This is home</h1>
+<form>
 <button>+</button>
-<div th:object="${counter}"><p th:text="${counter.counter}"></p></div>
+</form>
+<div><p th:text="${counter.getCounter()}"></p></div>
+<form>
 <button>-</button>
-
+</form>
 </body>
 </html>
